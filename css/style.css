@@ -10,8 +10,8 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Lexend';
     font-weight: 400;
+    font-family: 'Lexend';
     color: var(--primary);
 }
 
@@ -49,8 +49,8 @@ body {
 h2 {
     margin: 0;
     text-align: center;
-    font-weight: 700;
     font-size: 1.75rem;
+    font-weight: 700;
     color: #000;
 }
 
@@ -64,7 +64,7 @@ h2 {
     height: 210px;
     object-fit: cover;
     object-position: top;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .btn-prev,
@@ -106,12 +106,12 @@ h2 {
 }
 
 .type {
-    font-weight: 600;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 0.25rem 0.75rem;
     background-color: #222;
     color: #fff;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid;
+    border-radius: 5px;    
 }
 
 .body {
@@ -136,9 +136,9 @@ h2 {
 }
 
 #author {
-    font-weight: 600;
-    font-size: 1.1rem;
     margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .btn {
@@ -153,18 +153,22 @@ h2 {
 }
 
 .btn-container-random {
-    text-align: center;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .btn-random {
+    background-color: var(--accent-pink);
     border-radius: 5px;
     padding: 0.4rem 0.55rem;
-    background-color: var(--accent-pink);
 }
 
 .btn-random i {
     color: #fff;
+}
+
+footer {
+    visibility: hidden;
 }
 
 @media (min-height: 812px){
@@ -179,7 +183,7 @@ h2 {
         height: 230px;
     }
     .container {
-        padding: 0 1rem 0 1rem;
+        padding: 0rem 1rem 0rem 1rem;
     }
     .title {
         margin: 0rem 0rem 2rem 0rem;
@@ -197,7 +201,7 @@ h2 {
         border-radius: 15px;
     }
     .container {
-        padding: 0 1rem 0 1rem;
+        padding: 0rem 1rem 0rem 1rem;
     }
     .title {
         margin: 0rem 0rem 2rem 0rem;
@@ -253,6 +257,9 @@ h2 {
     }
 }
 @media (min-width: 900px){
+    body {
+        position: relative;
+    }
     main {
         margin-top: 3%;
     }
@@ -274,5 +281,28 @@ h2 {
     }
     .btn-container-random {
         margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    footer {
+        visibility: visible;
+        position: absolute;
+        width: 100%;
+    }
+    .footer-element {
+        font-family: 'Roboto Mono';
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .footer-element i, .footer-element a {
+        font-size: 1.5rem;
+        color: var(--type-green);
+        text-decoration: none;
+    }
+    .footer-element a {
+        font-size: smaller;
+    }
+    .footer-element a:hover, .footer-element i:hover {
+        color: #000;
     }
 }
